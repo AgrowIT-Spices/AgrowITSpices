@@ -67,8 +67,16 @@ section {
   padding: 80px 0;
 }
 
-.section-bg {
-  background-color: #eee;
+#chefs {
+  /* background-color: #eee; */
+  /* background-color: rgba(58, 157, 91, 0.73); */
+  background-color: #24905d;
+}
+#chef-tag1{
+  font-size: 50px;
+  font-weight: 600;
+  font-family: 'Ubuntu','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
 .section-header {
@@ -95,7 +103,7 @@ section {
 }
 
 .section-header p span {
-  color: var(--color-primary);
+  color: white;
 }
 
 /*--------------------------------------------------------------
@@ -266,6 +274,7 @@ section {
   border-color: #eee;
 }
 
+
 .header .logo img {
   max-height: 40px;
   margin-right: 6px;
@@ -280,10 +289,10 @@ section {
   font-family: var(--font-secondary);
 }
 
-.header .logo h1 span {
-  color: var(--color-primary);
-}
 
+.header .logo h1 span {
+  color: #14c871;
+}
 .header .btn-book-a-table,
 .header .btn-book-a-table:focus {
   font-size: 14px;
@@ -293,8 +302,67 @@ section {
   margin-left: 30px;
   border-radius: 50px;
   transition: 0.3s;
+  max-width: 100%;
 }
 
+
+.product-nav{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  /* margin-left: 60px; */
+
+}
+
+
+@media (max-width: 580px) {
+
+  .product-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    padding-right: 60px;
+  }
+
+
+}
+@media (max-width: 486px) {
+
+  .product-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    padding-right: 50px;
+  }
+  .btn-book-a-table {
+    font-size: 7px; /* Adjust font size for even smaller screens */
+    max-width: 80%; /* Ensure the button doesn't overflow */
+  }
+
+}
+@media (min-width: 350px) and (max-width: 486px) {
+
+  .product-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    padding-right: 500px;
+  }
+  .btn-book-a-table {
+    font-size: 2px; /* Adjust font size for even smaller screens */
+    max-width: 100%; /* Ensure the button doesn't overflow */
+  }
+
+  .logo-nav{
+    margin-left: 10px;
+    padding-left: 10px;
+  }
+
+}
+ 
 .header .btn-book-a-table:hover,
 .header .btn-book-a-table:focus:hover {
   color: #fff;
@@ -605,6 +673,11 @@ background-image:
   min-height: 500px;
 }
 
+#home-tag2{
+  font-size: 50px;
+  font-weight: 600;
+  font-family: 'Ubuntu','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 .about h3 {
   font-weight: 700;
   font-size: 36px;
@@ -762,6 +835,7 @@ background-image:
   color: #fff;
   border-radius: 50px;
   transition: all ease-in-out 0.4s;
+
 }
 
 .why-us .why-box .more-btn i {
@@ -776,11 +850,31 @@ background-image:
 .why-us .icon-box {
   text-align: center;
   background: #fff;
+  /* padding: 40px 30px; */
   padding: 40px 30px;
+
   width: 100%;
   height: 100%;
   border: 1px solid rgba(55, 55, 63, 0.1);
   transition: 0.3s;
+  /* border-color: rgba(19, 117, 52, 0.73); */
+  /* box-shadow: 0 4px 8px 0 rgba(17, 123, 66, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  /* background: #eee; */
+  /* box-shadow: 0 8px 8px -4px lightblue; */
+  /* box-shadow: 0 0 50px #ccc; */
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+#whyg{
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 50px #ccc;
+
+}
+
+#whychoose{
+  padding-top: 30px;
+  padding-left: 20px;
+
 }
 
 .why-us .icon-box i {
@@ -1119,8 +1213,10 @@ background-image:
   text-align: center;
   border-radius: 5px;
   background: #fff;
-  box-shadow: 0px 0 30px rgba(55, 55, 63, 0.08);
-  transition: 0.3s;
+  /* box-shadow: 0px 0 30px rgba(55, 55, 63, 0.08); */
+  box-shadow: 0 0 50px #2b5438;
+
+  transition: 0.7s;
 }
 
 .chefs .chef-member .member-img {
@@ -1136,7 +1232,7 @@ background-image:
   height: 100%;
   width: 100%;
   background: url(../img/team-shape.svg) no-repeat center bottom;
-  background-size: contain;
+  /* background-size:20%; */
   z-index: 1;
 }
 
@@ -1146,10 +1242,11 @@ background-image:
   top: 30px;
   opacity: 0;
   border-radius: 4px;
-  transition: 0.5s;
+  transition: 0.3s;
   background: rgba(255, 255, 255, 0.3);
   z-index: 2;
 }
+
 
 .chefs .chef-member .social a {
   transition: color 0.3s;
@@ -1381,6 +1478,10 @@ background-image:
   height: 100%;
 }
 
+.ccard{
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+}
 .contact .info-item .icon {
   display: flex;
   align-items: center;
@@ -1605,7 +1706,8 @@ background-image:
 .footer {
   font-size: 14px;
   background-color: #1f1f24;
-  padding: 50px 0;
+  padding: 50px;
+  padding-top: 0px;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -1623,7 +1725,7 @@ background-image:
   color: #fff;
 }
 
-.footer .footer-links {
+/* .footer .footer-links {
   margin-bottom: 30px;
 }
 
@@ -1671,14 +1773,16 @@ background-image:
 .footer .social-links a:hover {
   color: #fff;
   border-color: #fff;
-}
+} */
 
 .footer .copyright {
   text-align: center;
   padding-top: 30px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
-
+#copy-right{
+  color: white;
+}
 .footer .credits {
   padding-top: 4px;
   text-align: center;
