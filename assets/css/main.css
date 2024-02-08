@@ -775,6 +775,17 @@ background-image:
   color: var(--color-primary);
 }
 
+
+@media (min-width: 310px) and (max-width: 486px) {
+  .about .call-us p {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-primary);
+  }
+  
+
+  
+}
 .about .content ul {
   list-style: none;
   padding: 0;
