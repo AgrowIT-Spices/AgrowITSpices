@@ -78,6 +78,8 @@ section {
   font-family: 'Ubuntu','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
+
+
 #header{
   display: flex;
   align-items: center;
@@ -89,6 +91,12 @@ section {
     display: flex;
     align-items: center;
     /* justify-content: space-between; */
+  }
+  #chef-tag1{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Ubuntu','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
   }
 }
 .section-header {
@@ -461,6 +469,26 @@ section {
   font-weight: 500;
   font-family: 'Ubuntu','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+@media (min-width: 320px) and (max-width: 486px) {
+
+  
+#tag1{
+  font-size: 50px;
+  font-weight: 600;
+  font-family: 'Ubuntu','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#tag2{
+  font-size: 40px;
+  font-weight: 400;
+  font-family: 'Ubuntu','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+}
+
 #sp{
   color: rgb(255, 255, 255,0.8);
 }
@@ -626,6 +654,8 @@ background-image:
   }
 }
 
+
+
 /*--------------------------------------------------------------
 # Mobile Navigation
 --------------------------------------------------------------*/
@@ -725,6 +755,7 @@ background-image:
 
   .mobile-nav-active {
     overflow: hidden;
+
   }
 
   .mobile-nav-active .navbar {
