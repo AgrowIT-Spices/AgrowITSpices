@@ -411,7 +411,7 @@ section {
   }
   .btn-book-a-table {
     /* font-size: 2px; Adjust font size for even smaller screens */
-    /* max-width: 100%; Ensure the button doesn't overflow */
+    max-width: 100%; 
     justify-content: center;
   }
 
@@ -504,6 +504,14 @@ section {
 background-image:
     linear-gradient(to bottom, rgba(13, 116, 85, 0.52), rgba(19, 117, 52, 0.73)),
     url(../img/cardamon.jpg);
+}
+
+@media (max-width: 768px) {
+  .total {
+    background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center center;
+  }
 }
 /*--------------------------------------------------------------
 # Desktop Navigation
