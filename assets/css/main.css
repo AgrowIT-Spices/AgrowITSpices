@@ -55,7 +55,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6 ,
+#enq{
   font-family: var(--font-secondary);
 }
 
@@ -350,7 +351,9 @@ section {
   max-width: 100%;
 }
 
-
+#social{
+  padding: 5px;
+}
 
 
 .logo-nav{
