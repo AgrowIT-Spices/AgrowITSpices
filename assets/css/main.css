@@ -13,11 +13,16 @@
 /* Fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Anuphan&family=Poppins:ital,wght@1,400;1,500&family=Ubuntu:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
 
 :root {
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-primary: "Amatic SC", sans-serif;
   --font-secondary: "Inter", sans-serif;
+  --font-three:"Kalam", cursive;
+  --font-head:"Protest Revolution", sans-serif;
+
 }
 
 /* Colors */
@@ -76,7 +81,7 @@ section {
 #chef-tag1{
   font-size: 50px;
   font-weight: 600;
-  font-family: 'Ubuntu','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: var(--font-head);
 
 }
 
@@ -1000,12 +1005,15 @@ background-image:
 
 }
 
-#whychoose{
+#whychoose {
+ font-family: var(--font-head);
   padding-top: 30px;
   padding-left: 20px;
 
 }
-
+#font {
+  font-family: var(--font-three);
+}
 .why-us .icon-box i {
   color: var(--color-primary);
   margin-bottom: 30px;
@@ -1601,6 +1609,10 @@ background-image:
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
+
+#contacts{
+  font-family: var(--font-head);
+}
 .contact .info-item {
   background: #fff;
   padding: 30px;
