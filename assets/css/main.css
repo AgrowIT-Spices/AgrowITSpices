@@ -1239,11 +1239,10 @@ section {
 
 
 /* -------------------------------- */
-  
 .food-menu {
   padding-bottom: 40px;
   text-align: center;
-  background:url(./chefs/bg.png);
+  background: url(./chefs/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1301,29 +1300,35 @@ section {
 }
 
 #font {
-  /* font-family: "Audiowide", sans-serif !important; */
   font-weight: 500;
   font-size: 20px;
 }
 
 .menu span {
-  position: absolute;
+  position: inherit;
   top: 30%;
-  left: 30%;
-  color: #d9d9d9;
+  left:0px;
+  color: white;
+  opacity: 0; /* Hide by default */
+  transition: opacity 0.5s ease-in-out;
 }
 
 .hover-text {
+  color: white;
+
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
 
-.menu-item:hover .hover-text {
-  opacity: 1;
+.initial-text{
+  color: white;
 }
 
-.menu-item:hover .initial-text {
-  opacity: 0;
+.menu-item:hover .initial-text,
+.menu-item:hover .hover-text {
+  opacity: 1;
+  color: white;
+
 }
 
 .menu-item .overlay {
@@ -1377,7 +1382,7 @@ section {
   opacity: 1;
 }
 
-.buy-now {
+.buy-now , .initial-text{
   color: #fff;
   text-decoration: none;
   position: relative;
@@ -1387,6 +1392,7 @@ section {
 .buy-now:hover {
   text-decoration: underline;
 }
+
 
 /*--------------------------------------------------------------
 # Book A Table Section
