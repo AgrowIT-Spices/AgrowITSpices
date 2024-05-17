@@ -79,7 +79,12 @@ section {
 #chefs {
   /* background-color: #eee; */
   /* background-color: rgba(58, 157, 91, 0.73); */
-  background-color: #24905d;
+  background:url(../img/chefs/bg1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Audiowide", sans-serif !important;
+
 }
 #chef-tag1{
   font-size: 50px;
@@ -1011,6 +1016,7 @@ background-image:
 .why-us .why-box {
   padding: 30px;
   background: var(--color-primary);
+  /* background: #7EC1B8; */
   color: #fff;
 }
 
@@ -1944,4 +1950,155 @@ background-image:
 
 .footer .credits a {
   color: #fff;
+}
+
+
+/* -------------------------------- */
+  
+.food-menu {
+  padding-bottom: 40px;
+  text-align: center;
+  background:url(./chefs/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.food-menu h2 {
+  color: #666;
+  margin: 30px auto;
+}
+
+.menu-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-item {
+  position: relative;
+  margin: 15px;
+  text-align: center;
+  width: 280px;
+  height: 280px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+}
+
+#img1 {
+  background-image: url("../img/chefs/chefs-1.jpg");
+}
+
+#img2 {
+  background-image: url("../img/chefs/chefs-2.jpg");
+}
+
+#img3 {
+  background-image: url("../img/chefs/chefs-3.jpg");
+}
+
+#img4 {
+  background-image: url("../img/chefs/chefs-4.jpg");
+}
+
+#img5 {
+  background-image: url("../img/chefs/chefs-5.jpg");
+}
+
+#img6 {
+  background-image: url("../img/chefs/chefs-6.jpg");
+}
+
+#font {
+  font-family: "Audiowide", sans-serif !important;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.menu span {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  color: #d9d9d9;
+}
+
+.hover-text {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.menu-item:hover .hover-text {
+  opacity: 1;
+}
+
+.menu-item:hover .initial-text {
+  opacity: 0;
+}
+
+.menu-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.menu-item:hover .overlay {
+  opacity: 1;
+}
+
+.steak .decor-line1 {
+  top: 8%;
+  left: 8%;
+}
+
+.steak .decor-line2 {
+  top: 50%;
+  right: 7%;
+}
+
+.steak .decor-line1,
+.steak .decor-line2 {
+  position: absolute;
+  width: 0.5%;
+  height: 0.5%;
+  z-index: 1;
+  opacity: 0;
+  background-color: #f6bbbb;
+  animation: mydecor 2s ease-in-out 0s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes mydecor {
+  from {
+    width: 1%;
+  }
+  to {
+    width: 85%;
+  }
+}
+
+.steak:hover .decor-line1,
+.steak:hover .decor-line2 {
+  opacity: 1;
+}
+
+.buy-now {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  z-index: 2; /* Ensure it's on top of other elements */
+}
+
+.buy-now:hover {
+  text-decoration: underline;
 }
