@@ -91,7 +91,7 @@ section {
   font-size: 50px;
   font-weight: 600;
   font-family: "Source Sans 3", sans-serif;
-  font-weight: 600;
+  
  
 
 }
@@ -1246,6 +1246,8 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+ 
+
 }
 
 .food-menu h2 {
@@ -1311,6 +1313,8 @@ section {
   color: white;
   opacity: 0; /* Hide by default */
   transition: opacity 0.5s ease-in-out;
+  font-family: "Source Sans 3", sans-serif !important;
+  font-weight: 600;
 }
 
 .hover-text {
