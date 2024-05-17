@@ -18,7 +18,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
 :root {
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-primary: "Amatic SC", sans-serif;
@@ -84,7 +84,7 @@ section {
 #chef-tag1{
   font-size: 50px;
   font-weight: 600;
-  font-family: var(--font-head);
+  font-family: "Zen Dots", sans-serif;;
 
 }
 
@@ -1068,7 +1068,7 @@ background-image:
 }
 
 #whychoose {
- font-family: var(--font-head);
+  font-family: "Zen Dots", sans-serif;
   padding-top: 30px;
   padding-left: 20px;
 
@@ -1673,7 +1673,7 @@ background-image:
 --------------------------------------------------------------*/
 
 #contacts{
-  font-family: var(--font-head);
+  font-family: "Zen Dots", sans-serif;
 }
 .contact .info-item {
   background: #fff;
