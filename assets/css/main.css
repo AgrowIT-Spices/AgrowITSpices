@@ -19,6 +19,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 :root {
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-primary: "Amatic SC", sans-serif;
@@ -79,20 +80,23 @@ section {
 #chefs {
   /* background-color: #eee; */
   /* background-color: rgba(58, 157, 91, 0.73); */
-  background:url(../img/chefs/bg1.png);
+  background:url(../img/chefs/bg3.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  font-family: "Audiowide", sans-serif !important;
+  font-family: "Source Sans 3", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
 
 }
 #chef-tag1{
   font-size: 50px;
   font-weight: 600;
   font-family: "Zen Dots", sans-serif;;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
 
 }
 
@@ -145,7 +149,10 @@ section {
   font-size: 34px;
 }
 
-
+.btn{
+  background: #059652;
+  border: none;
+}
 
 /* ------------------------------------------------------- */
 .button-container {
@@ -220,55 +227,6 @@ section {
   }
  
 }
-/* 
-#header{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-} */
-/* @media (min-width: 320px) and (max-width: 486px) {
-
-
-  #header {
-    display: flex;
-    align-items: center;
-  
-  }
-  #chef-tag1{
-    font-size: 40px;
-    font-weight: 600;
-    font-family: 'Ubuntu','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  
-  }
-} */
-/* .section-header {
-  text-align: center;
-  padding-bottom: 30px;
-}
-
-.section-header h2 {
-  font-size: 13px;
-  letter-spacing: 1px;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-  color: #7f7f90;
-  text-transform: uppercase;
-  font-family: var(--font-secondary) !important;
-}
-
-.section-header p {
-  margin: 0;
-  font-size: 48px;
-  font-weight: 400;
-  font-family: var(--font-secondary);
-}
-
-.section-header p span {
-  color: white;
-} */
-
 
 /*--------------------------------------------------------------
 # Scroll top button
@@ -356,242 +314,6 @@ section {
     transition-delay: 0 !important;
   }
 }
-
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
-/* .header {
-  background: #fff;
-  transition: all 0.5s;
-  z-index: 997;
-  height: 90px;
-  border-bottom: 1px solid #fff;
-}
-
-@media (max-width: 575px) {
-  .header {
-    height: 70px;
-  }
-}
-
-.header.sticked {
-  border-color: #fff;
-  border-color: #eee;
-} */
-
-/* 
-.header .logo img {
-  max-height: 40px;
- 
-}
-
-.header .logo h1 {
-  font-size: 28px;
-  font-weight: 700;
-  color: #000;
- 
-  font-family: var(--font-secondary);
-} */
-
-/* 
-@media (min-width: 320px) and (max-width: 486px) {
-
-
-  .header .logo h1 {
-    font-size: 24px;
-    font-weight: 700;
-    color: #000;
-    margin-left: 0px;
-    margin-right: 150px;
-
-   
-    font-family: var(--font-secondary);
-  }
-  
-
-} */
-
-/* 
-.header .logo h1 span {
-  color: #14c871;
-}
-.header .btn-book-a-table,
-.header .btn-book-a-table:focus {
-  font-size: 14px;
-  color: #fff;
-  background: var(--color-primary);
- 
-  border-radius: 50px;
-  transition: 0.3s;
-  max-width: 100%;
-}
-
-#social{
-  padding: 5px;
-}
- */
-/* 
-.logo-nav{
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  /* margin-left: 60px; */
-/* } 
-.logo-h1{
-  padding: 0;
-  margin: 0;
-} */
-/* .product-nav{
-  margin: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  margin-left: 60px;
-
-}
-
-
-@media (max-width: 580px) {
-
-  .product-nav{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 10px;
-    padding-right: 60px;
-  }
-
-
-}
-@media (max-width: 486px) {
-
-  .product-nav{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
-    padding-right: 50px;
-  } */
-  /* .btn-book-a-table {
-    font-size: 7px; Adjust font size for even smaller screens
-    max-width: 80%; Ensure the button doesn't overflow
-  } */
-
-/* }
-@media (min-width: 320px) and (max-width: 486px) {
-
-  .product-nav{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 20px;
-    padding-right: 500px;
-  } */
-  /* .btn-book-a-table {
-    font-size: 2px; Adjust font size for even smaller screens
-    max-width: 100%; 
-    justify-content: center;
-  } */
-/* 
-  .logo-nav {
-    display: flex;
-    align-items: center;
-    justify-content: ; */
-    /* margin-left: 60px; */
-
-  /* }
-  .logo-h1{
-    padding: 0;
-    margin: 2px;
-  } */
-  
-  
-
-  /* .header .btn-book-a-table,
-.header .btn-book-a-table:focus {
-  font-size: 14px;
-  color: #fff;
-  background: var(--color-primary);
-  padding: 8px 20px;
-  padding-left: 9px;
-  margin-left: 30px;
-  border-radius: 50px;
-  transition: 0.3s;
-  max-width: 100%;
-}
-
-
-} */
-/*  
-.header .btn-book-a-table:hover,
-.header .btn-book-a-table:focus:hover {
-  color: #fff;
-  background: rgba(206, 18, 18, 0.8);
-  background: #059652;
-  
-}
-
-section {
-  scroll-margin-top: 90px;
-}
-
-
-#tag1{
-  font-size: 80px;
-  font-weight: 600;
-  font-family: 'Ubuntu','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-#tag2{
-  font-size: 50px;
-  font-weight: 500;
-  font-family: 'Ubuntu','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-@media (min-width: 320px) and (max-width: 486px) {
-
-  
-#tag1{
-  font-size: 50px;
-  font-weight: 600;
-  font-family: 'Ubuntu','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-#tag2{
-  font-size: 40px;
-  font-weight: 400;
-  font-family: 'Ubuntu','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
- */
-
-/* } */
-
-/* #sp{
-  color: rgb(255, 255, 255,0.8);
-}
-.total{
-  background:url(../img/cardamon.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  color: black;
-  opacity: .8;/
-  background: rgb(18,65,63);
-background: linear-gradient(90deg, rgba(18,65,63,1) 7%, rgba(20,200,131,1) 44%, rgba(39,42,45,1) 100%);
-background-image:
-    linear-gradient(to bottom, rgba(13, 116, 85, 0.52), rgba(19, 117, 52, 0.73)),
-    url(../img/menu/homeimg.jpg);
-}
-
-@media (max-width: 768px) {
-  .total {
-    background-repeat: no-repeat !important;
-  background-size: cover !important;
-  background-position: center center;
-  }
-} */
-
 
 /*--------------------------------------------------------------
 # Desktop Navigation
@@ -1509,6 +1231,157 @@ background-image:
   opacity: 1;
 }
 
+
+/* -------------------------------- */
+  
+.food-menu {
+  padding-bottom: 40px;
+  text-align: center;
+  background:url(./chefs/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.food-menu h2 {
+  color: #666;
+  margin: 30px auto;
+}
+
+.menu-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-item {
+  position: relative;
+  margin: 15px;
+  text-align: center;
+  width: 280px;
+  height: 280px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+}
+
+#img1 {
+  background-image: url("../img/chefs/chefs-1.jpg");
+}
+
+#img2 {
+  background-image: url("../img/chefs/chefs-2.jpg");
+}
+
+#img3 {
+  background-image: url("../img/chefs/chefs-3.jpg");
+}
+
+#img4 {
+  background-image: url("../img/chefs/chefs-4.jpg");
+}
+
+#img5 {
+  background-image: url("../img/chefs/chefs-5.jpg");
+}
+
+#img6 {
+  background-image: url("../img/chefs/chefs-6.jpg");
+}
+
+#font {
+  font-family: "Audiowide", sans-serif !important;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.menu span {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  color: #d9d9d9;
+}
+
+.hover-text {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.menu-item:hover .hover-text {
+  opacity: 1;
+}
+
+.menu-item:hover .initial-text {
+  opacity: 0;
+}
+
+.menu-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.menu-item:hover .overlay {
+  opacity: 1;
+}
+
+.steak .decor-line1 {
+  top: 8%;
+  left: 8%;
+}
+
+.steak .decor-line2 {
+  top: 50%;
+  right: 7%;
+}
+
+.steak .decor-line1,
+.steak .decor-line2 {
+  position: absolute;
+  width: 0.5%;
+  height: 0.5%;
+  z-index: 1;
+  opacity: 0;
+  background-color: #f6bbbb;
+  animation: mydecor 2s ease-in-out 0s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes mydecor {
+  from {
+    width: 1%;
+  }
+  to {
+    width: 85%;
+  }
+}
+
+.steak:hover .decor-line1,
+.steak:hover .decor-line2 {
+  opacity: 1;
+}
+
+.buy-now {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  z-index: 2; /* Ensure it's on top of other elements */
+}
+
+.buy-now:hover {
+  text-decoration: underline;
+}
+
 /*--------------------------------------------------------------
 # Book A Table Section
 --------------------------------------------------------------*/
@@ -1955,153 +1828,3 @@ background-image:
   color: #fff;
 }
 
-
-/* -------------------------------- */
-  
-.food-menu {
-  padding-bottom: 40px;
-  text-align: center;
-  background:url(./chefs/bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.food-menu h2 {
-  color: #666;
-  margin: 30px auto;
-}
-
-.menu-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.menu-item {
-  position: relative;
-  margin: 15px;
-  text-align: center;
-  width: 280px;
-  height: 280px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  transition: all 0.3s ease-in-out;
-}
-
-.menu-item:hover {
-  transform: scale(1.05);
-}
-
-#img1 {
-  background-image: url("../img/chefs/chefs-1.jpg");
-}
-
-#img2 {
-  background-image: url("../img/chefs/chefs-2.jpg");
-}
-
-#img3 {
-  background-image: url("../img/chefs/chefs-3.jpg");
-}
-
-#img4 {
-  background-image: url("../img/chefs/chefs-4.jpg");
-}
-
-#img5 {
-  background-image: url("../img/chefs/chefs-5.jpg");
-}
-
-#img6 {
-  background-image: url("../img/chefs/chefs-6.jpg");
-}
-
-#font {
-  font-family: "Audiowide", sans-serif !important;
-  font-weight: 500;
-  font-size: 20px;
-}
-
-.menu span {
-  position: absolute;
-  top: 30%;
-  left: 30%;
-  color: #d9d9d9;
-}
-
-.hover-text {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.menu-item:hover .hover-text {
-  opacity: 1;
-}
-
-.menu-item:hover .initial-text {
-  opacity: 0;
-}
-
-.menu-item .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.menu-item:hover .overlay {
-  opacity: 1;
-}
-
-.steak .decor-line1 {
-  top: 8%;
-  left: 8%;
-}
-
-.steak .decor-line2 {
-  top: 50%;
-  right: 7%;
-}
-
-.steak .decor-line1,
-.steak .decor-line2 {
-  position: absolute;
-  width: 0.5%;
-  height: 0.5%;
-  z-index: 1;
-  opacity: 0;
-  background-color: #f6bbbb;
-  animation: mydecor 2s ease-in-out 0s infinite;
-  animation-direction: alternate;
-}
-
-@keyframes mydecor {
-  from {
-    width: 1%;
-  }
-  to {
-    width: 85%;
-  }
-}
-
-.steak:hover .decor-line1,
-.steak:hover .decor-line2 {
-  opacity: 1;
-}
-
-.buy-now {
-  color: #fff;
-  text-decoration: none;
-  position: relative;
-  z-index: 2; /* Ensure it's on top of other elements */
-}
-
-.buy-now:hover {
-  text-decoration: underline;
-}
