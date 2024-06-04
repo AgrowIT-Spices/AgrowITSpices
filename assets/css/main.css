@@ -413,7 +413,7 @@ section {
 }
 
 .buy-now:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 
