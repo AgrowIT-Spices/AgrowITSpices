@@ -132,6 +132,290 @@ section {
   border: none;
 }
 
+
+/*--------------------------------------------------------------
+# Chefs Section
+--------------------------------------------------------------*/
+#chefs {
+  /* background-color: #eee; */
+  /* background-color: rgba(58, 157, 91, 0.73); */
+  background:url(../img/chefs/bg3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Audiowide", sans-serif !important;
+
+}
+
+#chef-tag1{
+  font-size: 50px;
+  font-weight: 600;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.chefs .chef-member {
+  overflow: hidden;
+  text-align: center;
+  border-radius: 5px;
+  background: #fff;
+  /* box-shadow: 0px 0 30px rgba(55, 55, 63, 0.08); */
+  box-shadow: 0 0 50px #2b5438;
+
+  transition: 0.7s;
+}
+
+.chefs .chef-member .member-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.chefs .chef-member .member-img:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: url(../img/team-shape.svg) no-repeat center bottom;
+  /* background-size:20%; */
+  z-index: 1;
+}
+
+.chefs .chef-member .social {
+  position: absolute;
+  right: -100%;
+  top: 30px;
+  opacity: 0;
+  border-radius: 4px;
+  transition: 0.3s;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 2;
+}
+
+.chefs .chef-member .social a {
+  transition: color 0.3s;
+  color: rgba(55, 55, 63, 0.4);
+  margin: 15px 12px;
+  display: block;
+  line-height: 0;
+  text-align: center;
+}
+
+.chefs .chef-member .social a:hover {
+  color: rgba(55, 55, 63, 0.9);
+}
+
+.chefs .chef-member .social i {
+  font-size: 18px;
+}
+
+.chefs .chef-member .member-info {
+  padding: 10px 15px 20px 15px;
+}
+
+.chefs .chef-member .member-info h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: var(--color-secondary);
+}
+
+.chefs .chef-member .member-info span {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(33, 37, 41, 0.4);
+}
+
+.chefs .chef-member .member-info p {
+  font-style: italic;
+  font-size: 14px;
+  padding-top: 15px;
+  line-height: 26px;
+  color: rgba(33, 37, 41, 0.7);
+}
+
+.chefs .chef-member:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 0 30px rgba(55, 55, 63, 0.15);
+}
+
+.chefs .chef-member:hover .social {
+  right: 8px;
+  opacity: 1;
+}
+
+
+.menu-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* .menu-item {
+  position: relative;
+  margin: 15px;
+  text-align: center;
+  width: 280px;
+  height: 280px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.3s ease-in-out;
+} */
+.menu-item {
+  position: relative;
+  margin: 15px;
+  text-align: center;
+  width: 280px;
+  height: 280px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  z-index: 2; /* Ensure it's on top of other elements */
+}
+
+
+.menu-item:hover {
+  transform: scale(1.05);
+}
+
+#img1 {
+  background-image: url("../img/chefs/chefs-1.jpg");
+  border: 3px solid white;
+  border-radius: 30px;
+}
+
+#img2 {
+  background-image: url("../img/chefs/chefs-2.jpg");
+  border: 3px solid white;
+  border-radius: 30px;
+}
+
+#img3 {
+  background-image: url("../img/chefs/chefs-3.jpg");
+  border: 3px solid white;
+  border-radius: 30px;
+}
+
+#img4 {
+  background-image: url("../img/chefs/chefs-4.jpg");
+  border: 3px solid white;
+  border-radius: 30px;
+}
+
+#img5 {
+  background-image: url("../img/chefs/chefs-5.jpg");
+  border: 3px solid white;
+  border-radius: 30px;
+}
+
+#img6 {
+  background-image: url("../img/chefs/chefs-6.jpg");
+  border: 3px solid white;
+  border-radius: 30px;
+}
+
+#font {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.hover-text {
+  color: white;
+
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.initial-text{
+  color: white;
+}
+
+.menu-item:hover .initial-text,
+.menu-item:hover .hover-text {
+  opacity: 1;
+  color: white;
+
+}
+
+.menu-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  border-radius: 30px;
+}
+
+.menu-item:hover .overlay {
+  opacity: 1;
+}
+
+.steak .decor-line1 {
+  top: 25%;
+  left: 8%;
+}
+
+.steak .decor-line2 {
+  top: 75%;
+  right: 7%;
+}
+
+.steak .decor-line1,
+.steak .decor-line2 {
+  position: absolute;
+  width: 0.5%;
+  height: 0.5%;
+  z-index: 1;
+  opacity: 0;
+  background-color: #f6bbbb;
+  animation: mydecor 2s ease-in-out 0s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes mydecor {
+  from {
+    width: 1%;
+  }
+  to {
+    width: 85%;
+  }
+}
+
+.steak:hover .decor-line1,
+.steak:hover .decor-line2 {
+  opacity: 1;
+}
+
+.buy-now , .initial-text{
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  z-index: 2; /* Ensure it's on top of other elements */
+}
+
+.buy-now:hover {
+  text-decoration: underline;
+}
+
+
 /*--------------------------------------------------------------
 # landing page
 --------------------------------------------------------------*/
@@ -677,250 +961,6 @@ section {
   }
 }
 
-
-/*--------------------------------------------------------------
-# Chefs Section
---------------------------------------------------------------*/
-#chefs {
-  /* background-color: #eee; */
-  /* background-color: rgba(58, 157, 91, 0.73); */
-  background:url(../img/chefs/bg3.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  font-family: "Audiowide", sans-serif !important;
-
-}
-
-#chef-tag1{
-  font-size: 50px;
-  font-weight: 600;
-  font-family: "Source Sans 3", sans-serif;
-}
-
-.chefs .chef-member {
-  overflow: hidden;
-  text-align: center;
-  border-radius: 5px;
-  background: #fff;
-  /* box-shadow: 0px 0 30px rgba(55, 55, 63, 0.08); */
-  box-shadow: 0 0 50px #2b5438;
-
-  transition: 0.7s;
-}
-
-.chefs .chef-member .member-img {
-  position: relative;
-  overflow: hidden;
-}
-
-.chefs .chef-member .member-img:after {
-  position: absolute;
-  content: "";
-  left: 0;
-  bottom: 0;
-  height: 100%;
-  width: 100%;
-  background: url(../img/team-shape.svg) no-repeat center bottom;
-  /* background-size:20%; */
-  z-index: 1;
-}
-
-.chefs .chef-member .social {
-  position: absolute;
-  right: -100%;
-  top: 30px;
-  opacity: 0;
-  border-radius: 4px;
-  transition: 0.3s;
-  background: rgba(255, 255, 255, 0.3);
-  z-index: 2;
-}
-
-.chefs .chef-member .social a {
-  transition: color 0.3s;
-  color: rgba(55, 55, 63, 0.4);
-  margin: 15px 12px;
-  display: block;
-  line-height: 0;
-  text-align: center;
-}
-
-.chefs .chef-member .social a:hover {
-  color: rgba(55, 55, 63, 0.9);
-}
-
-.chefs .chef-member .social i {
-  font-size: 18px;
-}
-
-.chefs .chef-member .member-info {
-  padding: 10px 15px 20px 15px;
-}
-
-.chefs .chef-member .member-info h4 {
-  font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 20px;
-  color: var(--color-secondary);
-}
-
-.chefs .chef-member .member-info span {
-  display: block;
-  font-size: 14px;
-  font-weight: 400;
-  color: rgba(33, 37, 41, 0.4);
-}
-
-.chefs .chef-member .member-info p {
-  font-style: italic;
-  font-size: 14px;
-  padding-top: 15px;
-  line-height: 26px;
-  color: rgba(33, 37, 41, 0.7);
-}
-
-.chefs .chef-member:hover {
-  transform: scale(1.08);
-  box-shadow: 0px 0 30px rgba(55, 55, 63, 0.15);
-}
-
-.chefs .chef-member:hover .social {
-  right: 8px;
-  opacity: 1;
-}
-
-
-.menu-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.menu-item {
-  position: relative;
-  margin: 15px;
-  text-align: center;
-  width: 280px;
-  height: 280px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  transition: all 0.3s ease-in-out;
-}
-
-.menu-item:hover {
-  transform: scale(1.05);
-}
-
-#img1 {
-  background-image: url("../img/chefs/chefs-1.jpg");
-}
-
-#img2 {
-  background-image: url("../img/chefs/chefs-2.jpg");
-}
-
-#img3 {
-  background-image: url("../img/chefs/chefs-3.jpg");
-}
-
-#img4 {
-  background-image: url("../img/chefs/chefs-4.jpg");
-}
-
-#img5 {
-  background-image: url("../img/chefs/chefs-5.jpg");
-}
-
-#img6 {
-  background-image: url("../img/chefs/chefs-6.jpg");
-}
-
-#font {
-  font-weight: 500;
-  font-size: 20px;
-}
-
-.hover-text {
-  color: white;
-
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.initial-text{
-  color: white;
-}
-
-.menu-item:hover .initial-text,
-.menu-item:hover .hover-text {
-  opacity: 1;
-  color: white;
-
-}
-
-.menu-item .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.menu-item:hover .overlay {
-  opacity: 1;
-}
-
-.steak .decor-line1 {
-  top: 8%;
-  left: 8%;
-}
-
-.steak .decor-line2 {
-  top: 50%;
-  right: 7%;
-}
-
-.steak .decor-line1,
-.steak .decor-line2 {
-  position: absolute;
-  width: 0.5%;
-  height: 0.5%;
-  z-index: 1;
-  opacity: 0;
-  background-color: #f6bbbb;
-  animation: mydecor 2s ease-in-out 0s infinite;
-  animation-direction: alternate;
-}
-
-@keyframes mydecor {
-  from {
-    width: 1%;
-  }
-  to {
-    width: 85%;
-  }
-}
-
-.steak:hover .decor-line1,
-.steak:hover .decor-line2 {
-  opacity: 1;
-}
-
-.buy-now , .initial-text{
-  color: #fff;
-  text-decoration: none;
-  position: relative;
-  z-index: 2; /* Ensure it's on top of other elements */
-}
-
-.buy-now:hover {
-  text-decoration: underline;
-}
 
 
 /*--------------------------------------------------------------
