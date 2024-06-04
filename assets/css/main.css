@@ -137,9 +137,10 @@ section {
 # Chefs Section
 --------------------------------------------------------------*/
 #chefs {
+  /*height: 50vh;  for the apple kinda website*/
   /* background-color: #eee; */
   /* background-color: rgba(58, 157, 91, 0.73); */
-  background:url(../img/chefs/bg3.png);
+  /* background:url(../img/chefs/bg3.png); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
