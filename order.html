@@ -86,7 +86,7 @@
                 <label for="product" class="form-label">Product:</label>
                 <select class="form-select" id="product" name="product" aria-label="Select Product" required>
                   <option selected disabled>Select a Product</option>
-                  <option value="blackPepper">Cardamom Bold 8mm</option>
+                  <option value="Cradamom 8mm">Cardamom Bold 8mm</option>
                   <option value="cardamom">Cardamom</option>
                   <option value="cinnamon">Black Pepper</option>
                   <option value="clove">Clove</option>
@@ -116,7 +116,7 @@
               </div>
         
               <div class="mb-3">
-                <label for="message" class="form-label">Message:</label>
+                <label for="message" class="form-label">Address:</label>
                 <textarea class="form-control" id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
               </div>
         
@@ -129,21 +129,29 @@
         
           
           <script type="text/javascript">
-            function sendMail(){
-              console.log("working")
-              console.log(document.getElementById("product").value)
-              var params={
-                from_name :document.getElementById("name").value,
-                email_id :document.getElementById("email").value,
-                contact :document.getElementById("contact").value,
-                product :document.getElementById("product").value,
-                quantity :document.getElementById("quantity").value,
-                message :document.getElementById("message").value,
-              }
-              emailjs.send("service_etoezj8","template_bwocx4s",params).then(function (res){
-                alert("Successfully Sent!").then(res.alert("Form not working due to maintainance"))
-              })}
+            function sendMail() {
+              console.log("working");
+              console.log(document.getElementById("product").value);
+          
+              var params = {
+                from_name: document.getElementById("name").value,
+                email_id: document.getElementById("email").value,
+                contact: document.getElementById("contact").value,
+                product: document.getElementById("product").value,
+                quantity: document.getElementById("quantity").value,
+                message: document.getElementById("message").value,
+              };
+          
+              emailjs.send("service_etoezj8", "template_bwocx4s", params)
+                .then(function (res) {
+                  alert("Successfully Sent!");
+                })
+                .catch(function (error) {
+                  alert("Form not working due to maintenance: " + error);
+                });
+            }
           </script>
+          
         
 
         </div>
